@@ -1,0 +1,544 @@
+{
+    "meta": {
+        "returnedCount": 5,
+        "totalCount": 1000
+    },
+    "albums": [
+        {
+            "type": "album",
+            "id": "alb.455020162",
+            "upc": "00602508836077",
+            "shortcut": "the-weeknd/after-hours-explicit",
+            "href": "https://api.napster.com/v2.2/albums/alb.455020162",
+            "name": "After Hours",
+            "released": "2020-03-20T00:00:00.000Z",
+            "originallyReleased": "2020-03-20T00:00:00.000Z",
+            "label": "Republic Records",
+            "copyright": "℗ 2020 The Weeknd XO, Inc., marketed by Republic Records, a division of UMG Recordings, Inc.",
+            "tags": [
+                "Explicit"
+            ],
+            "discCount": 1,
+            "trackCount": 14,
+            "isExplicit": true,
+            "isSingle": false,
+            "accountPartner": "UMG Global",
+            "artistName": "The Weeknd",
+            "isAvailableInHiRes": false,
+            "contributingArtists": {
+                "primaryArtist": "art.51742775"
+            },
+            "discographies": {
+                "others": [
+                    "art.116219918",
+                    "art.61065354",
+                    "art.26871489",
+                    "art.284421451",
+                    "art.108868688",
+                    "art.303168917",
+                    "art.208419635",
+                    "art.178524789",
+                    "art.119906582",
+                    "art.21024631",
+                    "art.76260129",
+                    "art.285676705",
+                    "art.33291",
+                    "art.296025441",
+                    "art.263631918",
+                    "art.56778749",
+                    "art.263691275",
+                    "art.264524446",
+                    "art.220690524",
+                    "art.40079431",
+                    "art.68199985",
+                    "art.263018455",
+                    "art.220690526",
+                    "art.66629698",
+                    "art.403152920",
+                    "art.263678165",
+                    "art.263130969",
+                    "art.314739897",
+                    "art.271995418",
+                    "art.40079429",
+                    "art.266360781",
+                    "art.265109568",
+                    "art.221332158",
+                    "art.189572747",
+                    "art.30054257",
+                    "art.281158564",
+                    "art.341129909",
+                    "art.58336578",
+                    "art.221332269",
+                    "art.24023247",
+                    "art.264542196",
+                    "art.3231",
+                    "art.33131187",
+                    "art.268199684",
+                    "art.108868686",
+                    "art.42503075",
+                    "art.224490235",
+                    "art.299548252",
+                    "art.264736443",
+                    "art.26871488",
+                    "art.299291447",
+                    "art.454992738",
+                    "art.336425610"
+                ],
+                "main": [
+                    "art.51742775"
+                ]
+            },
+            "links": {
+                "images": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.455020162/images"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.455020162/tracks"
+                },
+                "posts": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.455020162/posts"
+                },
+                "artists": {
+                    "ids": [
+                        "art.51742775"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.51742775"
+                },
+                "genres": {
+                    "ids": [
+                        "g.253"
+                    ],
+                    "href": "https://api.napster.com/v2.2/genres/g.253"
+                }
+            },
+            "isStreamable": true
+        },
+        {
+            "type": "album",
+            "id": "alb.404757753",
+            "upc": "00602508067150",
+            "shortcut": "post-malone/hollywoods-bleeding-explicit",
+            "href": "https://api.napster.com/v2.2/albums/alb.404757753",
+            "name": "Hollywood's Bleeding",
+            "released": "2019-09-06T00:00:00.000Z",
+            "originallyReleased": "2019-09-06T00:00:00.000Z",
+            "label": "Republic Records",
+            "copyright": "℗ 2019 Republic Records, a division of UMG Recordings, Inc.",
+            "tags": [
+                "Explicit"
+            ],
+            "discCount": 1,
+            "trackCount": 17,
+            "isExplicit": true,
+            "isSingle": false,
+            "accountPartner": "UMG Global",
+            "artistName": "Post Malone",
+            "isAvailableInHiRes": false,
+            "contributingArtists": {
+                "primaryArtist": "art.177922095"
+            },
+            "discographies": {
+                "others": [
+                    "art.264519298",
+                    "art.69410617",
+                    "art.265109572",
+                    "art.31647051",
+                    "art.51484268",
+                    "art.47235967",
+                    "art.299576936",
+                    "art.262968824",
+                    "art.222156642",
+                    "art.278334975",
+                    "art.385737896",
+                    "art.273169635",
+                    "art.376219958",
+                    "art.241566200",
+                    "art.203",
+                    "art.17295741",
+                    "art.266182933",
+                    "art.268574685",
+                    "art.295886703",
+                    "art.33248",
+                    "art.340035726",
+                    "art.27956648",
+                    "art.6594805",
+                    "art.31168604",
+                    "art.42773566",
+                    "art.14369466",
+                    "art.315901458",
+                    "art.26871517",
+                    "art.265109568",
+                    "art.265109566",
+                    "art.195302997",
+                    "art.267316501",
+                    "art.295837421",
+                    "art.348844676",
+                    "art.5015309",
+                    "art.48120020",
+                    "art.295886701",
+                    "art.389223685",
+                    "art.263018455",
+                    "art.324988747",
+                    "art.21341084",
+                    "art.70590407",
+                    "art.28497071",
+                    "art.38927845",
+                    "art.266862433",
+                    "art.10906543",
+                    "art.264182851",
+                    "art.106770230",
+                    "art.264298430",
+                    "art.270440948",
+                    "art.272656583",
+                    "art.221092959",
+                    "art.263138036",
+                    "art.61938941",
+                    "art.293264594",
+                    "art.262183656",
+                    "art.26871529",
+                    "art.39627159"
+                ],
+                "main": [
+                    "art.177922095"
+                ]
+            },
+            "links": {
+                "images": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.404757753/images"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.404757753/tracks"
+                },
+                "posts": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.404757753/posts"
+                },
+                "artists": {
+                    "ids": [
+                        "art.177922095"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.177922095"
+                },
+                "genres": {
+                    "ids": [
+                        "g.146"
+                    ],
+                    "href": "https://api.napster.com/v2.2/genres/g.146"
+                }
+            },
+            "isStreamable": true
+        },
+        {
+            "type": "album",
+            "id": "alb.314832302",
+            "upc": "886446940410",
+            "shortcut": "luke-combs/this-ones-for-you-too-deluxe-edition",
+            "href": "https://api.napster.com/v2.2/albums/alb.314832302",
+            "name": "This One's for You Too (Deluxe Edition)",
+            "released": "2018-06-01T00:00:00.000Z",
+            "originallyReleased": "2018-06-01T00:00:00.000Z",
+            "label": "River House Artists/Columbia Nashville",
+            "copyright": "2018 River House Artists LLC, under exclusive license to Sony Music Entertainment",
+            "tags": [],
+            "discCount": 1,
+            "trackCount": 17,
+            "isExplicit": false,
+            "isSingle": false,
+            "accountPartner": "Sony",
+            "artistName": "Luke Combs",
+            "isAvailableInHiRes": false,
+            "contributingArtists": {
+                "primaryArtist": "art.137815008"
+            },
+            "discographies": {
+                "main": [
+                    "art.137815008"
+                ],
+                "others": [
+                    "art.13387",
+                    "art.23913",
+                    "art.314832321",
+                    "art.411288954",
+                    "art.26940",
+                    "art.8934353",
+                    "art.10115316",
+                    "art.10433509",
+                    "art.14882245",
+                    "art.20758463",
+                    "art.23692382",
+                    "art.26742107",
+                    "art.28787083",
+                    "art.29603751",
+                    "art.30523094",
+                    "art.31646071",
+                    "art.32604386",
+                    "art.33131198",
+                    "art.40419350",
+                    "art.40715356",
+                    "art.263136896",
+                    "art.40811493",
+                    "art.42190871",
+                    "art.45187873",
+                    "art.46084915",
+                    "art.50411477",
+                    "art.53050680",
+                    "art.60962875",
+                    "art.122638554",
+                    "art.132106107",
+                    "art.192238472",
+                    "art.193233368",
+                    "art.227925920",
+                    "art.212007613",
+                    "art.218500114",
+                    "art.263136898",
+                    "art.263136900",
+                    "art.263136903",
+                    "art.263136906",
+                    "art.263136908",
+                    "art.263136910",
+                    "art.263136914",
+                    "art.263136917",
+                    "art.263136919",
+                    "art.263136921",
+                    "art.263136924",
+                    "art.269143748",
+                    "art.270354926",
+                    "art.310596767",
+                    "art.314832316"
+                ]
+            },
+            "links": {
+                "images": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.314832302/images"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.314832302/tracks"
+                },
+                "posts": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.314832302/posts"
+                },
+                "artists": {
+                    "ids": [
+                        "art.137815008"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.137815008"
+                },
+                "genres": {
+                    "ids": [
+                        "g.407"
+                    ],
+                    "href": "https://api.napster.com/v2.2/genres/g.407"
+                }
+            },
+            "isStreamable": true
+        },
+        {
+            "type": "album",
+            "id": "alb.263136894",
+            "upc": "886446270401",
+            "shortcut": "luke-combs/this-ones-for-you-263136894",
+            "href": "https://api.napster.com/v2.2/albums/alb.263136894",
+            "name": "This One's for You",
+            "released": "2017-06-02T00:00:00.000Z",
+            "originallyReleased": "2017-06-02T00:00:00.000Z",
+            "label": "River House Artists/Columbia Nashville",
+            "copyright": "2017 River House Artists LLC, under exclusive license to Sony Music Entertainment",
+            "tags": [],
+            "discCount": 1,
+            "trackCount": 12,
+            "isExplicit": false,
+            "isSingle": false,
+            "accountPartner": "Sony",
+            "artistName": "Luke Combs",
+            "isAvailableInHiRes": false,
+            "contributingArtists": {
+                "primaryArtist": "art.137815008"
+            },
+            "discographies": {
+                "main": [
+                    "art.137815008"
+                ],
+                "others": [
+                    "art.20758463",
+                    "art.30523094",
+                    "art.263136924",
+                    "art.10115316",
+                    "art.42190871",
+                    "art.8934353",
+                    "art.263136898",
+                    "art.263136917",
+                    "art.33131198",
+                    "art.46084915",
+                    "art.263136900",
+                    "art.50411477",
+                    "art.13387",
+                    "art.29603751",
+                    "art.40811493",
+                    "art.263136908",
+                    "art.263136910",
+                    "art.192238472",
+                    "art.263136906",
+                    "art.122638554",
+                    "art.53050680",
+                    "art.42190867",
+                    "art.263136914",
+                    "art.40715356",
+                    "art.23692382",
+                    "art.40419350",
+                    "art.263136919",
+                    "art.263136896",
+                    "art.31646071",
+                    "art.26940",
+                    "art.212007613",
+                    "art.263136903",
+                    "art.193233368",
+                    "art.263136921",
+                    "art.218500114"
+                ]
+            },
+            "links": {
+                "images": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.263136894/images"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.263136894/tracks"
+                },
+                "posts": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.263136894/posts"
+                },
+                "artists": {
+                    "ids": [
+                        "art.137815008"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.137815008"
+                },
+                "genres": {
+                    "ids": [
+                        "g.407"
+                    ],
+                    "href": "https://api.napster.com/v2.2/genres/g.407"
+                }
+            },
+            "isStreamable": true
+        },
+        {
+            "type": "album",
+            "id": "alb.310499159",
+            "upc": "00602567647454",
+            "shortcut": "post-malone/beerbongs-and-bentleys",
+            "href": "https://api.napster.com/v2.2/albums/alb.310499159",
+            "name": "beerbongs & bentleys",
+            "released": "2018-06-16T00:00:00.000Z",
+            "originallyReleased": "2018-04-27T00:00:00.000Z",
+            "label": "Republic Records",
+            "copyright": "℗ 2018 Republic Records, a division of UMG Recordings, Inc.",
+            "tags": [
+                "Explicit"
+            ],
+            "discCount": 1,
+            "trackCount": 18,
+            "isExplicit": true,
+            "isSingle": false,
+            "accountPartner": "UMG Global",
+            "artistName": "Post Malone",
+            "isAvailableInHiRes": false,
+            "contributingArtists": {
+                "primaryArtist": "art.177922095"
+            },
+            "discographies": {
+                "main": [
+                    "art.177922095"
+                ],
+                "others": [
+                    "art.265341446",
+                    "art.264522515",
+                    "art.39606091",
+                    "art.242592813",
+                    "art.263059994",
+                    "art.222156658",
+                    "art.222156660",
+                    "art.263952393",
+                    "art.283320289",
+                    "art.310499190",
+                    "art.277597519",
+                    "art.15735700",
+                    "art.45136",
+                    "art.10337253",
+                    "art.231661033",
+                    "art.10421022",
+                    "art.247633484",
+                    "art.274717220",
+                    "art.263800291",
+                    "art.39154",
+                    "art.48120020",
+                    "art.310499163",
+                    "art.274484476",
+                    "art.269065532",
+                    "art.263938912",
+                    "art.310499165",
+                    "art.19148428",
+                    "art.265576218",
+                    "art.40028",
+                    "art.52313",
+                    "art.265109568",
+                    "art.310499161",
+                    "art.262971863",
+                    "art.38927845",
+                    "art.45463110",
+                    "art.290737440",
+                    "art.264924002",
+                    "art.33900412",
+                    "art.266112320",
+                    "art.29525745",
+                    "art.26871529",
+                    "art.21341084",
+                    "art.263939736",
+                    "art.32558379",
+                    "art.263018455",
+                    "art.265109572",
+                    "art.286554669",
+                    "art.310499172",
+                    "art.310499186",
+                    "art.114954674",
+                    "art.77140105",
+                    "art.310499170",
+                    "art.28497071",
+                    "art.310499175",
+                    "art.272364546",
+                    "art.269168893",
+                    "art.282816545",
+                    "art.264298430",
+                    "art.265109570",
+                    "art.329117961",
+                    "art.278334975",
+                    "art.316108114",
+                    "art.262183656",
+                    "art.265341259"
+                ]
+            },
+            "links": {
+                "images": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.310499159/images"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.310499159/tracks"
+                },
+                "posts": {
+                    "href": "https://api.napster.com/v2.2/albums/alb.310499159/posts"
+                },
+                "artists": {
+                    "ids": [
+                        "art.177922095"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.177922095"
+                },
+                "genres": {
+                    "ids": [
+                        "g.146"
+                    ],
+                    "href": "https://api.napster.com/v2.2/genres/g.146"
+                }
+            },
+            "isStreamable": true
+        }
+    ]
+}
