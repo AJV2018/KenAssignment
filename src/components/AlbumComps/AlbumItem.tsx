@@ -16,7 +16,7 @@ const AlbumItem = ({ item, onPress, index }: AlbumItemProps) => {
         <Pressable style={[styles.container, isEven ? styles.rightMargin : styles.leftMargin]} onPress={onPress}>
             <Image
                 source={{
-                    uri: `https://api.napster.com/imageserver/v2/albums/${item.id}/images/500x500.jpg`
+                    uri: `https://api.napster.com/imageserver/v2/albums/${item.id}/images/300x300.jpg`
                 }}
                 style={styles.imageStyles}
             />

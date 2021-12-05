@@ -8,7 +8,9 @@ import AlbumSkelton from '../../components/Skeltons/AlbumSkelton';
 import SongSkelton from '../../components/Skeltons/SongSkelton';
 import { getAlbums } from '../../services/requests';
 import { addAlbumsAction, setAlbumsAction } from '../../store/actions/albumActions';
+import { setCurrentAlbumAction } from '../../store/actions/trackActions';
 import { RootState } from '../../store/store';
+import globalStyles from '../../theme/globalStyles';
 import { Album } from '../../types/Album';
 import getItemLayout from '../../utils/getItemLayout';
 import Header from './Header';
@@ -56,7 +58,8 @@ const HomeScreen = (props: NativeStackScreenProps<any>): ReactElement => {
     }
 
     const handleAlbumPress = useCallback((album: Album) => {
-        props.navigation.navigate('AlbumScreen', { album });
+        dispatch(setCurrentAlbumAction(album))
+        props.navigation.navigate('AlbumScreen')
     }, [])
 
 
@@ -79,6 +82,7 @@ const HomeScreen = (props: NativeStackScreenProps<any>): ReactElement => {
                 numColumns={2}
                 keyExtractor={(itm, index) => `${itm.id}${index}`}
                 renderItem={_renderAlbumItem}
+                contentContainerStyle={globalStyles.flatlistBottomPadding}
                 ListHeaderComponent={<Header />}
                 ListFooterComponent={_renderFooter}
                 onEndReached={() => albums.length > 10 && handleAddAlbums(false)}

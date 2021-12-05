@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import colors from '../../theme/colors';
 import metrics from '../../theme/metrics';
 import NativeButton from './NativeButton';
 
@@ -27,5 +28,6 @@ const styles = StyleSheet.create({
     image: {
         width: metrics.responsiveWidth(8),
         height: metrics.responsiveWidth(8),
+        tintColor: colors.white
     }
 })

@@ -1,36 +1,33 @@
-import React, { useEffect } from 'react'
-import { View, Text } from 'react-native'
-import TrackPlayer from 'react-native-track-player'
-import * as tracks from '../../../test.json'
-const PlayerScreen = () => {
-    const t = tracks.tracks[0]
-    const track1 = {
-        url: t.previewURL, // Load media from the network
-        title: t.name,
-        artist: t.artistName,
-        album: t.albumName,
-        genre: 'Progressive House, Electro House',
-        date: '2014-05-20T07:00:00+00:00', // RFC 3339
-        artwork: 'http://example.com/cover.png', // Load artwork from the network
-        duration: 402 // Duration in seconds
-    };
-
-    useEffect(() => {
-        init()
-    })
-
-    const init = async () => {
-        await TrackPlayer.add([track1]);
-        TrackPlayer.play();
-        return () => {
-            TrackPlayer.reset()
-        }
-    }
+import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import React from 'react'
+import { View, Text, Image } from 'react-native'
+import { useProgress } from 'react-native-track-player'
+import { useSelector } from 'react-redux'
+import BackButton from '../../components/CommonComps/BackButton'
+import { RootState } from '../../store/store'
+import globalStyles from '../../theme/globalStyles'
+import { Track } from '../../types/Track'
+import Header from '../../components/AlbumComps/Header'
+import MainPlayer from '../../components/MainPlayer'
+import styles from './styles'
+const PlayerScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
+    const progress = useProgress(200)
+    const { tracks, currentTrack } = useSelector((state: RootState) => state.tracks);
+    const cTrack = tracks.find((itm: Track) => itm.id === currentTrack) || {}
     return (
-        <View>
-            <Text>Apple</Text>
+        <View style={globalStyles.fullScreen}>
+            <BackButton onPress={() => navigation.goBack()} />
+            <View style={styles.imageBox}>
+                <Image
+                    source={{
+                        uri: `https://api.napster.com/imageserver/v2/albums/${cTrack.albumId}/images/500x500.jpg`
+                    }}
+                    style={styles.image}
+                />
+            </View>
+            <MainPlayer />
         </View>
     )
 }
 
-export default PlayerScreen;
+export default PlayerScreen

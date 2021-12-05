@@ -12,5 +12,13 @@ export const getAlbums = (offset: number): Promise<any> => {
             .then(({ data }) => resolve(data))
             .catch(err => handleCatch(err, reject))
     })
+}
 
+export const getTracks = (albumId: string): Promise<any> => {
+    return new Promise((resolve, reject) => {
+        apiInstance
+            .get(`/albums/${albumId}/tracks`)
+            .then(({ data }) => resolve(data))
+            .catch(err => handleCatch(err, reject))
+    })
 }

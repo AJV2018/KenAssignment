@@ -16,6 +16,10 @@ const globalStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    justifySbAlignCenter: {
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
 
 
     //TEXT STYLES
@@ -58,7 +62,7 @@ const globalStyles = StyleSheet.create({
     },
     regular_h3: {
         fontFamily: fonts.type.poppinsRegular,
-        fontSize: fonts.size.font12
+        fontSize: fonts.size.font10
     },
 
     //PADDING AND MARGIN
@@ -73,6 +77,17 @@ const globalStyles = StyleSheet.create({
     white: {
         color: colors.white,
     },
+    lightGrey: {
+        color: colors.lightGrey,
+    },
+    red: {
+        color: colors.red,
+    },
+
+    //MISC
+    flatlistBottomPadding: {
+        paddingBottom: metrics.responsiveHeight(8)
+    }
 })
 
 export default globalStyles;

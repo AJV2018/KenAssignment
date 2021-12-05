@@ -4,11 +4,17 @@ import { PersistGate } from 'redux-persist/integration/react';
 import RootNavigation from './src/navigation';
 import store, { persistor } from './src/store/store';
 import TrackPlayer from 'react-native-track-player';
+import { initTrackPlayer, updateTrackPlayerOptions } from './src/utils/trackPlayer';
 
 const App = (): ReactElement => {
 
   useEffect(() => {
-    (async () => await TrackPlayer.setupPlayer({}))()
+    (
+      async () => {
+        await initTrackPlayer()
+        await updateTrackPlayerOptions()
+      }
+    )()
   }, [])
 
   //init redux, navigation

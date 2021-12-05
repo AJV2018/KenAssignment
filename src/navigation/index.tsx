@@ -5,10 +5,11 @@ import { useSelector } from 'react-redux';
 import MainLoader from '../components/MainLoader';
 import { RootState } from '../store/store';
 import HomeStack from './HomeStack';
+import { navigationRef } from './RootNavigation';
 
 const RootNavigation = (): ReactElement => {
     return (
-        <NavigationContainer>
+        <NavigationContainer ref={navigationRef}>
             <HomeStack />
         </NavigationContainer>
     )

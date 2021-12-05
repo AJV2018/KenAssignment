@@ -14,14 +14,14 @@ const styles = StyleSheet.create({
         fontSize: fonts.size.font12,
         textAlign: 'center',
         paddingHorizontal: metrics.responsiveWidth(5),
-        color: '#f7f7f7'
+        color: colors.lightGrey
     },
     retryText: {
         fontFamily: fonts.type.poppinsMedium,
         fontSize: fonts.size.font14,
         textAlign: 'center',
         paddingHorizontal: metrics.responsiveWidth(5),
-        color: '#f7f7f7',
+        color: colors.lightGrey,
         textDecorationLine: 'underline'
     },
     albumHeaderBox: {
