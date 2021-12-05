@@ -21,6 +21,11 @@ buildscript {
 
 allprojects {
     repositories {
+        jcenter() {
+            content {
+                includeGroup("com.google.android.exoplayer")
+            }
+        }
         mavenCentral()
         mavenLocal()
         maven {

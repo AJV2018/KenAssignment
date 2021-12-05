@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import colors from "./colors";
 import fonts from "./fonts";
+import metrics from "./metrics";
 
 const globalStyles = StyleSheet.create({
     //FLEXBOX
@@ -18,6 +19,10 @@ const globalStyles = StyleSheet.create({
 
 
     //TEXT STYLES
+    large_h1: {
+        fontFamily: fonts.type.poppinsSemiBold,
+        fontSize: fonts.size.font32
+    },
     bold_h1: {
         fontFamily: fonts.type.poppinsSemiBold,
         fontSize: fonts.size.font16
@@ -54,6 +59,19 @@ const globalStyles = StyleSheet.create({
     regular_h3: {
         fontFamily: fonts.type.poppinsRegular,
         fontSize: fonts.size.font12
+    },
+
+    //PADDING AND MARGIN
+    pad2: {
+        padding: metrics.responsiveWidth(2.5)
+    },
+    mar2: {
+        margin: metrics.responsiveWidth(2.5)
+    },
+
+    //COLORS 
+    white: {
+        color: colors.white,
     },
 })
 

@@ -1,5 +1,6 @@
 const colors = {
-    backgroundColor: '#E4E4E4',
+    backgroundColor: '#111111',
+    cardBackground: '#222222',
     white: '#FFFFFF',
     black: "#000000",
     translucentBlack: 'rgba(0,0,0,0.5)',

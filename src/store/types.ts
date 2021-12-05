@@ -11,3 +11,5 @@ export const SET_SHOW_ALERT = 'SET_SHOW_ALERT';
 
 //ALBUMS
 export const SET_ALBUMS = 'SET_ALBUMS';
+export const ADD_ALBUMS = 'ADD_ALBUMS';
+export const RESET_ALBUMS = 'RESET_ALBUMS';
