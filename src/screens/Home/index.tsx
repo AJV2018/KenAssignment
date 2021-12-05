@@ -85,7 +85,7 @@ const HomeScreen = (props: NativeStackScreenProps<any>): ReactElement => {
             <FlatList
                 data={albums}
                 numColumns={2}
-                keyExtractor={(itm, index) => `${itm.id}${index}`}
+                keyExtractor={(itm, index) => `${itm?.id}${index}`}
                 renderItem={_renderAlbumItem}
                 contentContainerStyle={globalStyles.flatlistBottomPadding}
                 ListHeaderComponent={<Header />}

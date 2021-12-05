@@ -15,7 +15,7 @@ import { useNavigationState } from '@react-navigation/core';
 const MiniPlayer = () => {
     const progress = useProgress(200)
     const { tracks, currentTrack } = useSelector((state: RootState) => state.tracks);
-    const cTrack = tracks.find((itm: Track) => itm.id === currentTrack) || {}
+    const cTrack = tracks.find((itm: Track) => itm?.id === currentTrack) || {}
     const state = useNavigationState(state => state);
     const isPlayerScreen = state?.routes[state?.index].name === 'PlayerScreen'
     if ((progress.position == 0) || isPlayerScreen || !currentTrack) {

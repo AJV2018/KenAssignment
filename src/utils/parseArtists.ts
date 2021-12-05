@@ -21,7 +21,7 @@ export const parseNewArtists = (albums: Album[], savedArtists: Object) => {
 export const parseArtistsArr = (artists: any[]) => {
     const newArtists = {}
     for (let artist of artists) {
-        newArtists[artist.id] = artist.name
+        newArtists[artist?.id] = artist.name
     }
     return { ...newArtists }
 

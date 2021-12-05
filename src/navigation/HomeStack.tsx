@@ -28,7 +28,7 @@ const HomeStack = (): ReactElement => {
             }
             if (event.nextTrack != null) {
                 const track = await TrackPlayer.getTrack(event.nextTrack);
-                dispatch(setCurrentTrackAction(track.id))
+                dispatch(setCurrentTrackAction(track?.id))
             } else {
                 dispatch(setCurrentTrackAction(''))
             }
@@ -40,9 +40,9 @@ const HomeStack = (): ReactElement => {
     });
 
     useEffect(() => {
-        const refinedTracks = tracks.map(track => refineApiTracks(track));
         (
             async () => {
+                const refinedTracks = tracks.filter(itm => itm ? true : false).map(track => refineApiTracks(track));
                 const queue = await TrackPlayer.getQueue();
                 await TrackPlayer.remove(queue.map((itm, idx) => idx))
                 await TrackPlayer.add(refinedTracks)

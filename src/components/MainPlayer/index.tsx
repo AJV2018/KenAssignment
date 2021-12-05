@@ -18,7 +18,7 @@ const MiniPlayer = () => {
     const progress = useProgress(200)
     const { tracks, currentTrack } = useSelector((state: RootState) => state.tracks);
     const [trackSliding, setTrackSliding] = useState(false);
-    const cTrack = tracks.find((itm: Track) => itm.id === currentTrack) || {}
+    const cTrack = tracks.find((itm: Track) => itm?.id === currentTrack) || {}
     const [volume, setVolume] = useState(0.1)
     useEffect(() => {
         (async () => {

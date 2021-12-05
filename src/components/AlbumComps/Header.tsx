@@ -16,7 +16,7 @@ const Header = ({ name, customArtists }) => {
         <View style={styles.trackHeaderBox}>
             <Image
                 source={{
-                    uri: `https://api.napster.com/imageserver/v2/albums/${currentAlbum.id}/images/500x500.jpg`
+                    uri: `https://api.napster.com/imageserver/v2/albums/${currentAlbum?.id}/images/500x500.jpg`
                 }}
                 style={styles.image}
             />

@@ -15,7 +15,7 @@ interface TrackItemProps {
 }
 const TrackItem = ({ item, index, onPress }: TrackItemProps) => {
     const { currentTrack, playingState } = useSelector((state: RootState) => state.tracks)
-    const isPlaying = (item.id === currentTrack) && playingState == 3;
+    const isPlaying = (item?.id === currentTrack) && playingState == 3;
     const artists = useSelector((state: RootState) => state.artists);
     const artistStr = getArtistsFromTrack(item, artists)
     return (

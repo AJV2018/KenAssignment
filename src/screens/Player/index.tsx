@@ -13,7 +13,7 @@ import styles from './styles'
 const PlayerScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
     const progress = useProgress(200)
     const { tracks, currentTrack } = useSelector((state: RootState) => state.tracks);
-    const cTrack = tracks.find((itm: Track) => itm.id === currentTrack) || {}
+    const cTrack = tracks.find((itm: Track) => itm?.id === currentTrack) || {}
     return (
         <View style={globalStyles.fullScreen}>
             <BackButton onPress={() => navigation.goBack()} />

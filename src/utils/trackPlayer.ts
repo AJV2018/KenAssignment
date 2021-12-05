@@ -2,7 +2,7 @@ import TrackPlayer, { Capability } from "react-native-track-player";
 
 export const playTrack = async id => {
     const allSongs = await TrackPlayer.getQueue()
-    const index = allSongs.map(itm => itm.id).indexOf(id);
+    const index = allSongs.map(itm => itm?.id).indexOf(id);
     await TrackPlayer.skip(index)
     await TrackPlayer.play();
 }

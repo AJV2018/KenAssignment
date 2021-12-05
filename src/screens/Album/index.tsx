@@ -30,11 +30,16 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
     const getTracksFomApi = async () => {
         setLoading(true)
         try {
-            const data = await getTracks(currentAlbum.id)
+            const data = await getTracks(currentAlbum?.id)
             if (data?.tracks) {
                 setError(false)
-                const cTrack = tracks.find(itm => itm.id === currentTrack)
-                dispatch(setTracksAction([...data.tracks, cTrack]))
+                const cTrack = tracks.find(itm => itm?.id === currentTrack)
+                if (cTrack) {
+                    dispatch(setTracksAction([...data.tracks, cTrack]))
+                } else {
+                    dispatch(setTracksAction([...data.tracks]))
+
+                }
             } else {
                 alert('Unable to fetch tracks at the moment')
                 setError(true)
@@ -50,7 +55,7 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
     }
 
 
-    const _renderTrackItem = ({ item, index }) => <TrackItem item={item} index={index} onPress={() => playTrack(item.id)} />;
+    const _renderTrackItem = ({ item, index }) => <TrackItem item={item} index={index} onPress={() => playTrack(item?.id)} />;
 
     return (
         <View style={globalStyles.fullScreen}>
@@ -58,7 +63,7 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
             <BackButton onPress={() => navigation.goBack()} />
             <FlatList
                 data={tracks}
-                keyExtractor={(itm, index) => `${itm.id}${index}`}
+                keyExtractor={(itm, index) => `${itm?.id}${index}`}
                 contentContainerStyle={globalStyles.flatlistBottomPadding}
                 renderItem={_renderTrackItem}
                 ListHeaderComponent={<Header />}
