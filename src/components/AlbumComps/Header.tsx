@@ -5,9 +5,13 @@ import { RootState } from '../../store/store'
 import globalStyles from '../../theme/globalStyles'
 import metrics from '../../theme/metrics'
 import { Album } from '../../types/Album'
+import { getArtistsFromAlbum } from '../../utils/parseArtists'
 
-const Header = ({ name }) => {
+const Header = ({ name, customArtists }) => {
     const { currentAlbum } = useSelector((state: RootState) => state.tracks)
+    const artists = useSelector((state: RootState) => state.artists);
+
+    const artistsStr = getArtistsFromAlbum(currentAlbum, artists).replace(`${name || currentAlbum.artistName}`, '')
     return (
         <View style={styles.trackHeaderBox}>
             <Image
@@ -18,6 +22,11 @@ const Header = ({ name }) => {
             />
             <Text style={[globalStyles.bold_h1, globalStyles.white, styles.albumNameText]} >{name || currentAlbum.name}</Text>
             <Text style={[globalStyles.medium_h1, globalStyles.red]} >{currentAlbum.artistName}</Text>
+            {
+                artistsStr.length > 0 || customArtists?.length > 0 &&
+                <Text style={[globalStyles.regular_h3, globalStyles.white]} >{customArtists || artistsStr}</Text>
+            }
+
         </View>
     )
 }

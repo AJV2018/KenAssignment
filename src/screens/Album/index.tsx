@@ -17,7 +17,7 @@ import Header from '../../components/AlbumComps/Header';
 
 const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
 
-    const { tracks, currentAlbum } = useSelector((state: RootState) => state.tracks)
+    const { tracks, currentAlbum, currentTrack } = useSelector((state: RootState) => state.tracks)
     const dispatch = useDispatch()
 
     const [loading, setLoading] = useState(false)
@@ -33,7 +33,8 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
             const data = await getTracks(currentAlbum.id)
             if (data?.tracks) {
                 setError(false)
-                dispatch(setTracksAction(data.tracks))
+                const cTrack = tracks.find(itm => itm.id === currentTrack)
+                dispatch(setTracksAction([...data.tracks, cTrack]))
             } else {
                 alert('Unable to fetch tracks at the moment')
                 setError(true)

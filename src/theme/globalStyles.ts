@@ -50,7 +50,7 @@ const globalStyles = StyleSheet.create({
     },
     medium_h3: {
         fontFamily: fonts.type.poppinsMedium,
-        fontSize: fonts.size.font12
+        fontSize: fonts.size.font10
     },
     regular_h1: {
         fontFamily: fonts.type.poppinsRegular,

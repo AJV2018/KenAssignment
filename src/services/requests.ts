@@ -1,3 +1,5 @@
+import { Album } from "../types/Album"
+import { parseArtistsArr, parseNewArtists } from "../utils/parseArtists"
 import apiInstance from "./apiInstance"
 
 const handleCatch = (err: Object, reject: any) => {
@@ -20,5 +22,19 @@ export const getTracks = (albumId: string): Promise<any> => {
             .get(`/albums/${albumId}/tracks`)
             .then(({ data }) => resolve(data))
             .catch(err => handleCatch(err, reject))
+    })
+}
+
+export const getAllArtists = (albums: Album[], savedArtists: Object): Promise<any> => {
+    const artistsString = parseNewArtists(albums, savedArtists)
+    return new Promise((resolve, reject) => {
+        if (artistsString.length) {
+            apiInstance
+                .get(`/artists/${artistsString}`)
+                .then(({ data }) => resolve(parseArtistsArr(data.artists || [])))
+                .catch(err => handleCatch(err, reject))
+        } else {
+            resolve({})
+        }
     })
 }

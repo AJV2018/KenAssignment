@@ -6,13 +6,15 @@ import AlbumItem from '../../components/AlbumComps/AlbumItem';
 import MainLoader from '../../components/MainLoader';
 import AlbumSkelton from '../../components/Skeltons/AlbumSkelton';
 import SongSkelton from '../../components/Skeltons/SongSkelton';
-import { getAlbums } from '../../services/requests';
+import { getAlbums, getAllArtists } from '../../services/requests';
 import { addAlbumsAction, setAlbumsAction } from '../../store/actions/albumActions';
+import { addArtistsAction } from '../../store/actions/artistActions';
 import { setCurrentAlbumAction } from '../../store/actions/trackActions';
 import { RootState } from '../../store/store';
 import globalStyles from '../../theme/globalStyles';
 import { Album } from '../../types/Album';
 import getItemLayout from '../../utils/getItemLayout';
+import { parseNewArtists } from '../../utils/parseArtists';
 import Header from './Header';
 import styles from './styles';
 
@@ -22,6 +24,7 @@ const HomeScreen = (props: NativeStackScreenProps<any>): ReactElement => {
     const [error, setError] = useState(false);
 
     const albums: Album[] = useSelector((state: RootState) => state.albums);
+    const artists = useSelector((state: RootState) => state.artists);
 
     const dispatch = useDispatch();
 
@@ -42,18 +45,20 @@ const HomeScreen = (props: NativeStackScreenProps<any>): ReactElement => {
         try {
             const data = await getAlbums(offset)
             setError(false)
-
+            const newArtists = await getAllArtists(data.albums, artists)
+            console.log('NEW ARTSUS >>>', newArtists)
+            dispatch(addArtistsAction(newArtists))
             // initially replace old albums
             if (shouldLoad) {
                 dispatch(setAlbumsAction(data.albums || []))
             } else {
                 dispatch(addAlbumsAction(data.albums || []))
             }
-        } catch (error) {
-            alert(error)
-            setError(true)
-        } finally {
             setLoading(false)
+        } catch (error) {
+            setError(true)
+            setLoading(false)
+            alert(error)
         }
     }
 
