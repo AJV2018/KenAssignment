@@ -42,12 +42,14 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
                 }
             } else {
                 alert('Unable to fetch tracks at the moment')
+                navigation.goBack()
                 setError(true)
             }
         } catch (error) {
             console.log('error')
             alert(error)
             setError(true)
+            navigation.goBack()
         } finally {
             setLoading(false)
         }
@@ -62,7 +64,7 @@ const AlbumScreen = ({ navigation, route }: NativeStackScreenProps<any>) => {
             <MainLoader loading={loading} />
             <BackButton onPress={() => navigation.goBack()} />
             <FlatList
-                data={tracks}
+                data={tracks.filter((itm: Track) => itm.albumId === currentAlbum?.id)}
                 keyExtractor={(itm, index) => `${itm?.id}${index}`}
                 contentContainerStyle={globalStyles.flatlistBottomPadding}
                 renderItem={_renderTrackItem}

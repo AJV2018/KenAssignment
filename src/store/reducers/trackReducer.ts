@@ -1,11 +1,18 @@
+import { Album } from "../../types/Album";
+import { Track } from "../../types/Track";
 import { SET_CURRENT_ALBUM, SET_CURRENT_TRACK, SET_PLAYBACK_STATE, SET_TRACKS } from "../types"
-
-const initialState = {
+interface TrackReducerProps {
+    tracks: Track[];
+    currentTrack: string;
+    currentAlbum: Album | Object;
+    playingState: number;
+}
+const initialState: TrackReducerProps = {
     tracks: [],
     currentTrack: '',
     currentAlbum: {},
     playingState: 0
-}
+};
 
 export default (state = initialState, { type, payload }) => {
     switch (type) {
